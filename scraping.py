@@ -19,7 +19,7 @@ def scrape_all():
         "news_paragraph": news_paragraph,
         "featured_image": featured_image(browser),
         "facts": mars_facts(),
-        "mars_hemi": mars_hemi(browser),
+        "mars_hemi": hemispheres(browser),
         "last_modified": dt.datetime.now()
     }
 
@@ -110,7 +110,7 @@ def mars_facts():
 
 
 # create function to scrape hemisphere
-def mars_hemi(browser):
+def hemispheres(browser):
     # Visit URL
     url = 'https://marshemispheres.com/'
     browser.visit(url)
