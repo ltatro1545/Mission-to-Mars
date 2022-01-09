@@ -104,7 +104,7 @@ def mars_facts():
     df.set_index('description', inplace=True)
 
     # convert pandas df back to html
-    df.to_html()
+    return df.to_html()
 
 
 if __name__ == "__main__":
